@@ -7,7 +7,10 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/login', function(req, res, next) {
-  res.render('login', { title: 'Login page',layout: false });
+  res.render('login', { title: 'Login page',layout: false ,success: false, errors: req.session.errors});
+  req.session.errors = null;
 });
+
+router.post('/submit')
 
 module.exports = router;

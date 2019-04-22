@@ -1,13 +1,22 @@
 <link type="text/css" rel="stylesheet" href="/css/all.css"/>
 <link type="text/css" rel="stylesheet" href="/vendor/bootstrap/css/bootstrap.min.css"/>
 <body>
+  {{# if errors}}
+    <section class="errors">
+      <ul>
+        {{# each errors}}
+          <li>{{this.msg}}</li>
+        {{/each}}
+      </ul>
+    </section>
+  {{/if}}
   <div class="container">
     <div class="row">
       <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
         <div class="card card-signin my-5">
           <div class="card-body">
             <h5 class="card-title text-center">Sign In</h5>
-            <form class="form-signin" action="/submit">
+            <form class="form-signin" action="/submit" method="POST">
               <div class="form-label-group">
                 <input type="text" id="inputEmail" class="form-control" placeholder="Username" required autofocus>
                 <label for="inputEmail">Username</label>

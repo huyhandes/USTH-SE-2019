@@ -1,0 +1,12 @@
+{
+    "id": "the-godfather",
+    "title": "The Godfather",
+    "subtitle": "THE GODFATHER-One of the best classic films ever made",
+    "directors": "Francis Ford Coppola",
+    "cast": " Marlon Brando, Al Pacino, James Caan",
+    "rated": "9.2/10",
+    "type": "Crime,Drama",
+    "duration": "2h 55min",
+    "postedtime": "March 30, 2019",
+    "content": "godfather.txt"
+}

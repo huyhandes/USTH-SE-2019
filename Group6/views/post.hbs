@@ -1,15 +1,14 @@
-<header class="masthead" style="background-image: url('img/post-bg.jpg')">
+<header class="masthead" style="background-image: url('img/{{this.id}}.jpg')">
     <div class="overlay"></div>
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           {{# each items}}
           <div class="post-heading">
-            <h1>{{this.headerName}}</h1>
-            <h2 class="subheading">{{this.ummary}}</h2>
-            <span class="meta">Posted by {{this.user}} on {{this.date}}</span>
+            <h1>{{this.title}}</h1>
+            <h2 class="subheading">{{this.subtitle}}</h2>
+            <span class="meta">Posted by admin on {{this.postedtime}}</span>
           </div>
-          {{/each}}
         </div>
       </div>
     </div>
@@ -20,9 +19,10 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
-          <pre>
-
-          </pre>
+          <p>
+              {{this.content}}
+            {{/each}}
+          </p>
         </div>
       </div>
     </div>

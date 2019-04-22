@@ -1,15 +1,25 @@
+<br>
+<br>
+<br>
+<br>
+<br>
 <div class="container">
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
-        {{# each items}}
-        <div class="post-preview" id="{{this.id}}">
-          <a href="/post:{{this.id}}">
-            <h2 class="post-title">
-              {{this.headerName}}
-            </h2>
-          </a>
-          <button type="button" onclick=""
+        <div class="post-preview">
+            <a href="/newpost">Create new post</a>
         </div>
+        {{# each items}}
+        <form action='/edit/{{this.id}}' method='POST'>
+            <div class="post-preview" id="{{this.id}}">
+            <a href="/post/{{this.id}}">
+                <h2 class="post-title">
+                {{this.title}}
+                </h2>
+            </a>
+            <button type="submit">Edit</button>
+            </div>
+        </form>
         {{/each}}
       </div>
     </div>

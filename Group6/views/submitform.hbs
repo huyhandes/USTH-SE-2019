@@ -7,7 +7,7 @@
         <div class="card card-signin my-5">
           <div class="card-body">
             <h5 class="card-title text-center">Article Post</h5>
-            <form action="/submit" method="POST">
+            <form action="/submit" method="post">
               <div class="form-label-group">
                 <input type="text" id="title" class="form-control" placeholder="Title" required autofocus>
                 <label for="title">Title</label>
@@ -24,29 +24,35 @@
               </div>
 
               <div class="form-label-group">
-                <input type="text" id="cast" class="form-control" placeholder="Cast" required>
+                <input type="text" id="cast" class="form-control" placeholder="Cast" required autofocus>
                 <label for="cast">Cast</label>
               </div>
+
               <div class="form-label-group">
-                <input type="text" id="rated" class="form-control" placeholder="Rated" required>
+                <input type="text" id="rated" class="form-control" placeholder="Rated" required autofocus>
                 <label for="rated">Rated</label>
               </div>
+
               <div class="form-label-group">
-                <input type="text" id="type" class="form-control" placeholder="Type" required>
+                <input type="text" id="type" class="form-control" placeholder="Type" required autofocus>
                 <label for="type">Type</label>
               </div>
+              
               <div class="form-label-group">
-                <input type="text" id="duration" class="form-control" placeholder="Duration" required>
+                <input type="text" id="duration" class="form-control" placeholder="Duration" required autofocus>
                 <label for="duration">Duration</label>
               </div>
+              
               <div class="form-label-group">
-                <input type="text" id="postedtime" class="form-control" placeholder="Postedtime" required>
+                <input type="text" id="postedtime" class="form-control" placeholder="Postedtime" required autofocus>
                 <label for="postedtime">Postedtime</label>
               </div>
+              
               <div class="form-label-group">
-                <input type="text" id="content" class="form-control" placeholder="Content" required>
+                <input type="text" id="content" class="form-control" placeholder="Content" required autofocus>
                 <label for="content">Content</label>
               </div>
+              <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Submit</button>
             </form>
           </div>
         </div>

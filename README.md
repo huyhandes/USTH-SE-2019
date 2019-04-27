@@ -9,4 +9,4 @@ https://docs.google.com/spreadsheets/d/1hEnIT3HrMlHvfNIApp7-WroqWzYDbisBFx0uOqV_
 
 Learn basics of Git (many other materials online)
 http://rogerdudler.github.io/git-guide/
-
+Link to our product https://whispering-scrubland-41311.herokuapp.com/
